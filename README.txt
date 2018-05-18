@@ -8,7 +8,9 @@ Abhishek Policepatil, Nag Bharadwaz Dasari
 Abstract:
 
 The application aims at providing the ease of commuting to the university and build a social network within the students of the university. Student with a car can register in the site as a driver and student who is looking for a ride can register in the site as a passneger. 
-The route details helps the user's to make a request to the driver's who are travelling in the same path and can make a contact with them
+The route details helps the user's to make a request to the driver's who are travelling in the same path and can make a contact with them.
+
+Note: Please run the project from Login.HTML file.
 
 
 
