@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <style>
+            div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #429ef4;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}        
+ 
+input[type='button'] {
+    background-repeat:no-repeat;
+background-position:100px;
+width:200px;
+padding:10px;
+margin-top:8px;
+font-family:Cursive;
+line-height:1;
+border-radius:5px;
+background-color:#429ef4;
+font-size:15px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none;
+}
+
+input[type='button']:hover{
+
+    color:#00ff7f;
+    
+}
+        </style>
+        
+        <script>
+            function Driver()
+            {
+               f2.action="DriverReg.html";
+               f2.submit();
+            }
+            
+           function Passenger()
+            {
+                f2.action="PassengerReg.html";
+                f2.submit();
+            }
+            
+            
+            
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class='container'>
+            <header><h1>Registration</h1></header>
+            <nav>
+            <a href="Login.html">Login if registered before</a>
+            </nav>
+            <article>
+        <form name="f2">
+            
+            <input type="button" name="" value="Register as a driver" onclick="Driver()"><br>
+        <input type="button" name="" value="Register as a Passenger"  onclick="Passenger()"><br>
+            </form>
+            </article>
+            <footer>
+        </div>
+    </body>
+</html>

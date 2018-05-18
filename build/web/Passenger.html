@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #429ef4;
+    clear: left;
+    text-align: center;
+}
+
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 10%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+select {
+background-repeat:no-repeat;
+background-position:100px;
+width:100px;
+padding:10px;
+margin-top:8px;
+font-family:Cursive;
+line-height:1;
+border-radius:5px;
+background-color:#429ef4;
+font-size:15px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+select:hover {
+color:#00ff7f
+}
+input[type='button'] {
+background-repeat:no-repeat;
+background-position:100px;
+width:100px;
+padding:10px;
+margin-top:8px;
+font-family:Cursive;
+line-height:1;
+border-radius:5px;
+background-color:#429ef4;
+font-size:15px;
+-webkit-appearance:none;
+box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+outline:none
+}
+
+input[type='button']:hover{
+
+    color:#00ff7f;
+    
+}
+input[type='text']
+{
+width: 100px;
+height: 20px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding: 8px;
+font-weight: 200;
+font-size: 15px;
+font-family: Verdana;
+box-shadow: 1px 1px 5px #CCC;
+}
+</style>
+        <script>
+            var x1,x2,x3;
+            x1=f1.t1.value;
+            
+            function display1()
+            {
+               if (f1.t1.value =="")
+               {
+                   alert("Please enter the specified route");
+                   window.location="Passenger.html";
+               }
+               else
+               
+           if(f1.t1.value>12 )
+             {
+               alert("Routes are from 1 to 12, Please enter the route between 1 to 12");
+               window.location="Passenger.html";
+            }
+           else
+               
+           if(f1.t1.value < 1)
+       {
+           alert("Routes are from 1 to 12, Please enter the route between 1 to 12");
+           window.location="Passenger.html";
+       }
+        else    
+        { 
+                   f1.action="Display1.jsp";
+                   f1.submit();
+               }                            
+            }
+            
+           function display()
+           {
+               f1.action="Display.jsp";
+               f1.submit();
+            }
+            
+            function getStatus()
+            {
+                var x2=f1.t2.value;
+                if(x2=="")
+                {
+                    alert("Please enter your Login name to get the status");
+                    window.location="Passenger.html";
+                }
+                else
+                    f1.action="PStatus.jsp";
+                    f1.submit();
+            }
+           
+           function back()
+           {
+               window.location="Login.html";
+           }
+            </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class='container'>
+    
+        <header>
+            <h1>Welcome Buddy</h1></header>
+            <article>
+        <form name="f1">
+        
+            See the rides of every route<input type="button" name="" value="Rider Details"  onclick="display()"><br><br>
+            Check for specific routes
+            Enter the route no<input type="text" name="t1" value="">Routes are from 1 to 12<br>
+            <input type="button" name="" value="Check"  onclick="display1()"><br><br>
+            
+                       
+        
+            Enter your Login-name and check for the status of your ride<input type="text" name="t2" value=""/><input type="button" name="" value="Get Status"  onclick="getStatus()"><br><br>
+        <input type="button"  name="b1" value="Log-out" onclick="back()"/>
+        
+            </form>
+            </article>
+            <footer>Copyrights @ abhishek.policepatil@snhu.edu</footer>
+            
+        </div>
+            </body>
+</html>
