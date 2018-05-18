@@ -21,9 +21,8 @@ Tech Stack
 - HTML5
 - CSS3
 - XML
+-JavaScript
 
-jQuery
-http://jquery.com/
 
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
+
+
